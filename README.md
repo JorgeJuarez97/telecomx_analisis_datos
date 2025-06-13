@@ -34,20 +34,20 @@ El análisis fue realizado utilizando Python y las siguientes librerías princip
 El análisis se llevó a cabo siguiendo una metodología estructurada:
 
 ### 1. **Limpieza y Tratamiento de Datos**
-    * **Carga de Datos:** Importación del archivo de datos (`.json` en este caso) y normalización de su estructura si contenía diccionarios anidados.
-    * **Renombre y Estandarización:** Renombre de columnas para mayor claridad y conversión de textos a minúsculas.
-    * **Manejo de Datos Faltantes y Tipos de Datos:** Identificación y tratamiento de valores nulos (rellenando con 0 en columnas numéricas como `Total`). Conversión de tipos de datos a los formatos adecuados (ejemplo, strings a numéricos).
-    * **Estandarización de Variables Binarias:** Transformación de columnas con valores `Yes`/`No` a `1`/`0`.
-    * **Creación de Nuevas Características:** Generación de la columna `CuentasDiarias` a partir de `Monthly`.
+   * **Carga de Datos:** Importación del archivo de datos (.json en este caso) y normalización de su estructura si contenía diccionarios anidados.
+   * **Renombre y Estandarización:** Renombre de columnas para mayor claridad y conversión de textos a minúsculas.
+   * **Manejo de Datos Faltantes y Tipos de Datos:** Identificación y tratamiento de valores nulos (rellenando con 0 en columnas numéricas como Total). Conversión de tipos de datos a los formatos adecuados (ejemplo, strings a numéricos).
+   * **Estandarización de Variables Binarias:** Transformación de columnas con valores Yes/No a 1/0.
+   * **Creación de Nuevas Características:** Generación de la columna CuentasDiarias a partir de Monthly.
 
 ### 2. **Análisis Exploratorio de Datos (EDA)**
-    * **Distribución de Churn:** Visualización de la proporción de clientes que No Permanecen vs. los que Permanecen (gráfico de pastel y barras).
-    * **Análisis por Variables Categóricas:**
+   * **Distribución de Churn:** Visualización de la proporción de clientes que No Permanecen vs. los que Permanecen (gráfico de pastel y barras).
+   * **Análisis por Variables Categóricas:**
         * **Género:** Comparación de la distribución de género entre clientes que No Permanecen y los que Permanecen (gráficos de barras).
         * **Tipo de Contrato:** Análisis del churn según la duración del contrato (gráficos de barras).
         * **Método de Pago:** Exploración de la relación entre el método de pago y la evasión (gráficos de barras).
         * **SeniorCitizen:** Comparación de la tasa de churn entre clientes mayores de 65 años y menores a 65 años (gráficos de barras).
-    * **Análisis por Variables Numéricas:**
+   * **Análisis por Variables Numéricas:**
         * **Total Gastado:** Distribución del gasto total para clientes que No Permanecen y los que Permanecen (histogramas con KDE).
         * **Meses de Contrato (Tenure):** Distribución de la antigüedad del contrato para clientes que No Permanecen y los que Permanecen (histogramas con KDE).
 
